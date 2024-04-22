@@ -2169,7 +2169,7 @@ get_ucp(PCRE2_SPTR *ptrptr, BOOL *negptr, uint16_t *ptypeptr,
 PCRE2_UCHAR c;
 PCRE2_SIZE i, bot, top;
 PCRE2_SPTR ptr = *ptrptr;
-PCRE2_UCHAR name[50];
+PCRE2_UCHAR name[50] = {0};
 PCRE2_UCHAR *vptr = NULL;
 uint16_t ptscript = PT_NOTSCRIPT;
 
